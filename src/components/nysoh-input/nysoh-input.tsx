@@ -13,7 +13,7 @@ export class NysohInput {
 
   render() {
     return (
-      <input class="form-control" value={this.value} type={this.type} disabled={this.disabled} placeholder={this.placeholder}/>
+      <nysoh-input class="form-control" value={this.value} type={this.type} disabled={this.disabled} placeholder={this.placeholder}/>
     );
   }
 

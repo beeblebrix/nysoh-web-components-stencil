@@ -1,5 +1,5 @@
 {
-  "timestamp": "2024-01-29T21:09:56",
+  "timestamp": "2024-01-29T22:45:39",
   "compiler": {
     "name": "@stencil/core",
     "version": "4.11.0",
@@ -277,9 +277,17 @@
       "styles": [],
       "slots": [],
       "parts": [],
-      "dependents": [],
-      "dependencies": [],
-      "dependencyGraph": {}
+      "dependents": [
+        "nysoh-input"
+      ],
+      "dependencies": [
+        "nysoh-input"
+      ],
+      "dependencyGraph": {
+        "nysoh-input": [
+          "nysoh-input"
+        ]
+      }
     }
   ],
   "typeLibrary": {}

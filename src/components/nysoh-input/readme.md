@@ -15,6 +15,23 @@
 | `value`       | `value`       |             | `string`                                                                                                                                                                                                                              | `undefined` |
 
 
+## Dependencies
+
+### Used by
+
+ - [nysoh-input](.)
+
+### Depends on
+
+- [nysoh-input](.)
+
+### Graph
+```mermaid
+graph TD;
+  nysoh-input --> nysoh-input
+  style nysoh-input fill:#f9f,stroke:#333,stroke-width:4px
+```
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
