@@ -11,6 +11,12 @@ export namespace Components {
         "link": string;
         "variant": 'primary' | 'secondary' | 'tertiary';
     }
+    interface NysohInput {
+        "disabled": boolean;
+        "placeholder": string;
+        "type": 'button' | 'checkbox' | 'color' | 'date'| 'color'| 'datetime-local'| 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'range' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week';
+        "value": string;
+    }
 }
 declare global {
     interface HTMLNysohButtonElement extends Components.NysohButton, HTMLStencilElement {
@@ -19,8 +25,15 @@ declare global {
         prototype: HTMLNysohButtonElement;
         new (): HTMLNysohButtonElement;
     };
+    interface HTMLNysohInputElement extends Components.NysohInput, HTMLStencilElement {
+    }
+    var HTMLNysohInputElement: {
+        prototype: HTMLNysohInputElement;
+        new (): HTMLNysohInputElement;
+    };
     interface HTMLElementTagNameMap {
         "nysoh-button": HTMLNysohButtonElement;
+        "nysoh-input": HTMLNysohInputElement;
     }
 }
 declare namespace LocalJSX {
@@ -29,8 +42,15 @@ declare namespace LocalJSX {
         "link"?: string;
         "variant"?: 'primary' | 'secondary' | 'tertiary';
     }
+    interface NysohInput {
+        "disabled"?: boolean;
+        "placeholder"?: string;
+        "type"?: 'button' | 'checkbox' | 'color' | 'date'| 'color'| 'datetime-local'| 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'range' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week';
+        "value"?: string;
+    }
     interface IntrinsicElements {
         "nysoh-button": NysohButton;
+        "nysoh-input": NysohInput;
     }
 }
 export { LocalJSX as JSX };
@@ -38,6 +58,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "nysoh-button": LocalJSX.NysohButton & JSXBase.HTMLAttributes<HTMLNysohButtonElement>;
+            "nysoh-input": LocalJSX.NysohInput & JSXBase.HTMLAttributes<HTMLNysohInputElement>;
         }
     }
 }

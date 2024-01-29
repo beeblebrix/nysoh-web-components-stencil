@@ -1,5 +1,5 @@
 {
-  "timestamp": "2024-01-29T17:45:18",
+  "timestamp": "2024-01-29T21:09:56",
   "compiler": {
     "name": "@stencil/core",
     "version": "4.11.0",
@@ -10,7 +10,7 @@
       "filePath": "src/components/nysoh-button/nysoh-button.tsx",
       "encapsulation": "shadow",
       "tag": "nysoh-button",
-      "readme": "# nysoh-button\n\n\n",
+      "readme": "# nysoh-button\r\n\r\n\r\n\r",
       "docs": "",
       "docsTags": [],
       "usage": {},
@@ -82,6 +82,188 @@
             },
             {
               "value": "tertiary",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "src/components/nysoh-input/nysoh-input.tsx",
+      "encapsulation": "shadow",
+      "tag": "nysoh-input",
+      "readme": "# nysoh-input\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "mutable": false,
+          "attr": "placeholder",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "\"button\" | \"checkbox\" | \"color\" | \"date\" | \"datetime-local\" | \"email\" | \"file\" | \"hidden\" | \"image\" | \"month\" | \"number\" | \"password\" | \"range\" | \"search\" | \"submit\" | \"tel\" | \"text\" | \"time\" | \"url\" | \"week\"",
+          "complexType": {
+            "original": "'button' | 'checkbox' | 'color' | 'date'| 'color'| 'datetime-local'| 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'range' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'",
+            "resolved": "\"button\" | \"checkbox\" | \"color\" | \"date\" | \"datetime-local\" | \"email\" | \"file\" | \"hidden\" | \"image\" | \"month\" | \"number\" | \"password\" | \"range\" | \"search\" | \"submit\" | \"tel\" | \"text\" | \"time\" | \"url\" | \"week\"",
+            "references": {}
+          },
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "'text'",
+          "values": [
+            {
+              "value": "button",
+              "type": "string"
+            },
+            {
+              "value": "checkbox",
+              "type": "string"
+            },
+            {
+              "value": "color",
+              "type": "string"
+            },
+            {
+              "value": "date",
+              "type": "string"
+            },
+            {
+              "value": "datetime-local",
+              "type": "string"
+            },
+            {
+              "value": "email",
+              "type": "string"
+            },
+            {
+              "value": "file",
+              "type": "string"
+            },
+            {
+              "value": "hidden",
+              "type": "string"
+            },
+            {
+              "value": "image",
+              "type": "string"
+            },
+            {
+              "value": "month",
+              "type": "string"
+            },
+            {
+              "value": "number",
+              "type": "string"
+            },
+            {
+              "value": "password",
+              "type": "string"
+            },
+            {
+              "value": "range",
+              "type": "string"
+            },
+            {
+              "value": "search",
+              "type": "string"
+            },
+            {
+              "value": "submit",
+              "type": "string"
+            },
+            {
+              "value": "tel",
+              "type": "string"
+            },
+            {
+              "value": "text",
+              "type": "string"
+            },
+            {
+              "value": "time",
+              "type": "string"
+            },
+            {
+              "value": "url",
+              "type": "string"
+            },
+            {
+              "value": "week",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "mutable": false,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "values": [
+            {
               "type": "string"
             }
           ],
